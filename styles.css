@@ -1,0 +1,141 @@
+body {
+    background-color:#000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.sidebar__navigation {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.sidebar__navigation .logo {
+    background-color: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.sidebar__navigation .logo img {
+    width: 80px;
+}
+
+.sidebar nav ul {
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.biblioteca {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.biblioteca__navigation {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0 16px 16px;
+}
+
+.biblioteca nav {
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.biblioteca nav a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif; 
+}
+
+.fa-plus {
+    position: absolute;
+    right: 30px;
+}
+
+.crie__playlist {
+    background-color: #1d1e20;
+    margin-top: 16px;
+    border-radius: 8px;
+    padding: 16px 0 16px 16px;
+}
+
+.crie__p1 {
+    color: #fff;
+}
+
+.text__p1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.but__crieplaylist {
+    color:#000;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 16px;
+    margin-top: 8px;
+    padding: 8px 8px 8px 8px;
+}
+
+.podcast {
+    background-color: #1d1e20;
+    margin-top: 16px;
+    border-radius: 8px;
+    padding: 16px 0 16px 16px;
+}
+
+.pod1 {
+    color: #fff;
+}
+
+.pod2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.but__podcast {
+    color:#000;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 16px;
+    margin-top: 8px;
+    padding: 8px 8px 8px 8px;
+} 
+
+.set__language {
+    background-color: #121212;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 30px;
+    border: 2px solid white ;
+    padding: 8px 16px 8px 16px;
+    margin-top: 370px;
+}
