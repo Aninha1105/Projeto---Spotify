@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Imersão Alura</title>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/var.css">
+    <link rel="stylesheet" href="/styles/sidebarAndFooter.css">
+    <link rel="stylesheet" href="styles/main-content.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
     integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
@@ -36,7 +38,7 @@
                             </a> 
                         </li>
                     </ul>
-            </div>
+    
         </nav>
         <div class="biblioteca">
             <nav class="biblioteca__navigation">
@@ -81,7 +83,7 @@
                 </section>
                 <div class="cookies">
                     <a href="">
-                        <span class="cookies__text">cookies</span>
+                        <span class="cookies__text">Cookies</span>
                     </a>
                 </div>
                 <section class="language">
@@ -94,18 +96,95 @@
                 </section>
             </nav>
         </div>
-        <footer class="premium"> <!-- Início do rodapé com a classe "premium" -->
-            <div class="premium__text"> <!-- Divisão para o texto do rodapé -->
-                <p class="premium__title">Testar o premium de graça</p>
-                <p class="premium__subtitle">
-                    Inscreva-se para curtir música ilimitada e podcasts só com alguns
-                    anúncios. Não precisa de cartão de crédito.
-                </p>
-            </div>
-            <div class="premium__button"> <!-- Divisão para o botão do rodapé -->
-                <button type="button">Inscreva-se grátis</button>
-            </div>
-        </footer>
     </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header-navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="/assets/icons/small-left.png" alt="seta-esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="/assets/icons/small-right.png" alt="seta-direita">
+                    </button>
+                    <div class="header-search">
+                        <img src="/assets/icons/search.png" alt="procurar">
+                        <input id="search-input" type="text" maxlength="800"
+                        placeholder="O que você quer ouvir?"/>
+                    </div>
+                    <div class="header-login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+                </div>
+            </nav>
+            <nav class="middle-navigation">
+                <div class="middle-header">
+                    <p class="middle-title">Navegar por todas as seções</p>
+                    <div class="playlist-sugestions">
+                        <button>
+                            <img src="assets/playlist/1.jpeg" alt="playlist_1">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/2.jpeg" alt="playlist_2">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/3.jpeg" alt="playlist_3">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/4.jpeg" alt="playlist_4">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/5.jpeg" alt="playlist_5">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/6.jpeg" alt="playlist_6">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/7.jpeg" alt="playlist_7">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/8.jpeg" alt="playlist_8">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/9.jpeg" alt="playlist_9">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/10.jpeg" alt="playlist_10">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/11.jpeg" alt="playlist_11">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/12.jpeg" alt="playlist_12">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/13.jpeg" alt="playlist_13">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/14.jpeg" alt="playlist_14">
+                        </button>
+                        <button>
+                            <img src="assets/playlist/15.jpeg" alt="playlist_15">
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="premium"> <!-- Início do rodapé com a classe "premium" -->
+        <div class="premium__text"> <!-- Divisão para o texto do rodapé -->
+            <p class="premium__title">Testar o premium de graça</p>
+            <p class="premium__subtitle">
+                Inscreva-se para curtir música ilimitada e podcasts só com alguns
+                anúncios. Não precisa de cartão de crédito.
+            </p>
+        </div>
+        <div class="premium__button"> <!-- Divisão para o botão do rodapé -->
+            <button type="button">Inscreva-se grátis</button>
+        </div>
+    </footer>
 </body>
 </html>
