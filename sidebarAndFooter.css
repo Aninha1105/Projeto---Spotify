@@ -1,6 +1,7 @@
 /* Estilo para o fundo do site */
 body {
-    background-color:#000; /* Cor de fundo */
+    background-color: var(--bg-principal-color); /* Cor de fundo */
+    font-family: var(--font-dm-sans);
 }
 
 /* Posicionamento do aba lateral */
@@ -15,14 +16,14 @@ body {
 
 /* Estilo da aba lateral */
 .sidebar__navigation {
-    background-color: #121212;
+    background-color: var(--bg-color1);
     border-radius: 8px;
     padding: 16px 0 0 16px;
 }
 
 /* Posicionamento da logo na aba lateral */
 .sidebar__navigation .logo {
-    background-color: #121212;
+    background-color: var(--bg-color1);
     display: flex;
     border-radius: 8px;
     padding: 16px 0 0 16px;
@@ -45,11 +46,10 @@ body {
 
 /* Estilo da texto da lista na aba lateral*/
 .sidebar nav ul li a {
-    color: #b3b3b3;
+    color: var(--word1-color);
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    font-family: "DM Sans", sans-serif;
 }
 
 /* Posicionamento e estilização da biblioteca da aba lateral */
@@ -63,7 +63,7 @@ body {
 }
 
 .biblioteca__navigation {
-    background-color: #121212;
+    background-color: var(--bg-color1);
     border-radius: 8px;
     padding: 16px 0 16px 16px;
 }
@@ -75,19 +75,17 @@ body {
     justify-content: space-between;
     flex-direction: column;
     padding: 16px 16px;
-    color: #b3b3b3;
+    color: var(--word1-color);
     font-weight: 600;
     font-size: 14px;
-    font-family: "DM Sans", sans-serif;
     margin-top: 16px;
 }
 
 .biblioteca nav a{
-    color: #b3b3b3;
+    color: var(--word1-color);
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
-    font-family: "DM Sans", sans-serif; 
+    font-size: 14px; 
 }
 
 /* Posicionamento e estilização do botão de mais na aba lateral */
@@ -96,8 +94,8 @@ body {
     right: 30px;
     border-radius: 10px;
     padding: 3px 3px 2px 3px;
-    background-color: #1d1e20;
-    color: #b3b3b3;
+    background-color: var(--bg-color2);
+    color: var(--word1-color);
 }
 
 /* Estilo para as classes ".playlist" e ".podcast" */
@@ -106,8 +104,8 @@ body {
     align-items: flex-start; /* Alinhamento dos itens no início do eixo transversal */
     justify-content: space-between; /* Espaçamento uniforme entre os elementos internos */
     gap: 20px; /* Espaçamento de 20 pixels entre os elementos internos */
-    background-color: #1d1e20; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
+    background-color: var(--bg-color2); /* Cor de fundo */
+    color: var(--word2-color); /* Cor do texto */
     margin: 16px 0; /* Margem de 16px cima/baixo e 0px dir/esq */
     padding: 20px 20px; /* Espaçamento interno de 20px cima/baixo e 20px dir/esq */
     border-radius: 8px; /* Borda arredondada com raio de 8 pixels */
@@ -120,11 +118,11 @@ body {
 
 .playlist__content .playlist__text-title, .podcast__content .podcast__text-title {
     font-weight: 700;
-    color: #fff;
+    color: var(--word2-color);
 }
 
 .playlist__content .playlist__text-subtitle, .podcast__content .podcast__text-subtitle {
-    color: #fff;
+    color: var(--word2-color);
     font-weight: 500;
     font-size: 12px;
 }
@@ -132,10 +130,10 @@ body {
 .playlist__button, .podcast__button {
     display: flex; /* Layout flexível para os elementos internos */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    color:#000; /* Cor do texto */
+    color:var(--word3-color); /* Cor do texto */
     font-size: 12px; /* Tamanho da fonte */
     font-weight: 700; /* Peso da fonte */
-    background-color: #fff; /* Cor de fundo */
+    background-color: var(--word2-color); /* Cor de fundo */
     border-radius: 20px; /* Borda arredondada com raio de 20 pixels */
     margin-top: 12px; /* Margem superior de 12 pixels */
     padding: 10px; /* Espaçamento interno de 10 pixels */
@@ -149,10 +147,9 @@ body {
 }
 
 .cookies__text {
-    color: #b3b3b3;
+    color: var(--word1-color);
     font-size: 10px;
     font-weight: 500;
-    font-family: "DM Sans", sans-serif;
 }
   
 .cookies a:hover {
@@ -162,8 +159,8 @@ body {
 .language .set__language {
     align-items: center; /* Alinhamento dos itens */
     background-color: transparent; /* Cor do fundo */
-    border: 1px solid #878787; /* Borda de 1 pixel sólido com cor #878787 */
-    color: #FFF; /* Cor do texto */
+    border: 1px solid var(--word2-color); /* Borda de 1 pixel sólido com cor #878787 */
+    color: var(--word2-color); /* Cor do texto */
     font-weight: bold; /* Peso da fonte */
     cursor: pointer; /* Cursor do mouse como ponteiro para indicar interatividade */
     width: 170px; /* Largura do botão */
@@ -174,7 +171,7 @@ body {
 
 /* Estilo para a o rodapé */
 .premium {
-    background: linear-gradient(to right, #3da728, #02336e); /* Fundo com um gradiente linear */
+    background: linear-gradient(to right, #9e5680, #ecd504); /* Fundo com um gradiente linear */
     position: fixed; /* Posicionamento fixo na tela */
     left: 0;
     bottom: 0;
@@ -182,12 +179,11 @@ body {
     padding: 15px 40px; /* Espaçamento interno de 15px cima/baixo e 40px dir/esq */
     display: flex; /* Layout flexível para os elementos internos */
     justify-content: space-between; /* Espaçamento uniforme entre os elementos internos */
-    font-family: "DM Sans", sans-serif; /* Fonte para o texto */ 
 }
 
 /* Estilo para o título dentro do rodapé*/
 .premium__title {
-    color: #fff; /* Cor do texto */
+    color: var(--word2-color); /* Cor do texto */
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
     font-weight: bold; /* Peso da fonte */
     font-size: 12px; /* Tamanho da fonte */
@@ -196,15 +192,15 @@ body {
 
 /* Estilo para o subtítulo dentro do rodapé*/
 .premium__subtitle {
-    color: #fff; /* Cor do texto */
+    color: var(--word2-color); /* Cor do texto */
     font-size: 14px; /* Tamanho da fonte */
     font-weight: 500; /* Peso da fonte */
 }
 
 /* Estilo para o botão dentro do rodapé */
 .premium__button button {
-    background-color: #fff; /* Cor de fundo para o botão */
-    color: #000; /* Cor do texto */
+    background-color: var(--word2-color); /* Cor de fundo para o botão */
+    color: var(--word3-color); /* Cor do texto */
     font-size: 16px; /* Tamanho da fonte */
     font-weight: bold; /* Peso da fonte */
     padding: 14px 30px; /* Espaçamento interno de 14px no cima/baixo e 30px dir/esq */
