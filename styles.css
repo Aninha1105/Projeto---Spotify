@@ -1,7 +1,9 @@
+/* Estilo para o fundo do site */
 body {
-    background-color:#000;
+    background-color:#000; /* Cor de fundo */
 }
 
+/* Posicionamento do aba lateral */
 .sidebar {
     position: fixed;
     top: 0;
@@ -11,12 +13,14 @@ body {
     width: 300px;
 }
 
+/* Estilo da aba lateral */
 .sidebar__navigation {
     background-color: #121212;
     border-radius: 8px;
     padding: 16px 0 0 16px;
 }
 
+/* Posicionamento da logo na aba lateral */
 .sidebar__navigation .logo {
     background-color: #121212;
     display: flex;
@@ -24,10 +28,12 @@ body {
     padding: 16px 0 0 16px;
 }
 
+/* Tamanho da imagem da logo na aba lateral */
 .sidebar__navigation .logo img {
     width: 80px;
 }
 
+/* Posicionamento e espaçamento da lista na aba lateral */
 .sidebar nav ul {
     margin-top: 16px;
     padding: 0 20px 10px 20px;
@@ -37,6 +43,7 @@ body {
     padding: 10px 0;
 }
 
+/* Estilo da texto da lista na aba lateral*/
 .sidebar nav ul li a {
     color: #b3b3b3;
     text-decoration: none;
@@ -45,6 +52,7 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
+/* Posicionamento e estilização da biblioteca da aba lateral */
 .biblioteca {
     position: fixed;
     top: 150px;
@@ -60,6 +68,7 @@ body {
     padding: 16px 0 16px 16px;
 }
 
+/*Posicionamento e estilização da fonte da biblioteca na aba lateral */
 .biblioteca nav {
     margin-top: 20px;
     display: flex;
@@ -81,6 +90,7 @@ body {
     font-family: "DM Sans", sans-serif; 
 }
 
+/* Posicionamento e estilização do botão de mais na aba lateral */
 .fa-plus {
     position: absolute;
     right: 30px;
@@ -90,21 +100,22 @@ body {
     color: #b3b3b3;
 }
 
+/* Estilo para as classes ".playlist" e ".podcast" */
 .playlist, .podcast {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
-    background-color: #1d1e20;
-    color: #fff;
-    margin: 16px 0;
-    padding: 20px 20px;
-    border-radius: 8px;
+    display: flex; /* Layout flexível para os elementos internos */
+    align-items: flex-start; /* Alinhamento dos itens no início do eixo transversal */
+    justify-content: space-between; /* Espaçamento uniforme entre os elementos internos */
+    gap: 20px; /* Espaçamento de 20 pixels entre os elementos internos */
+    background-color: #1d1e20; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    margin: 16px 0; /* Margem de 16px cima/baixo e 0px dir/esq */
+    padding: 20px 20px; /* Espaçamento interno de 20px cima/baixo e 20px dir/esq */
+    border-radius: 8px; /* Borda arredondada com raio de 8 pixels */
 }
 
 .playlist__content, .podcast__content {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Layout flexível para os elementos internos */
+    flex-direction: column; /* Direção da flexão como coluna */
 }
 
 .playlist__content .playlist__text-title, .podcast__content .podcast__text-title {
@@ -119,19 +130,20 @@ body {
 }
 
 .playlist__button, .podcast__button {
-    display: flex;
-    justify-content: center;
-    color:#000;
-    font-size: 12px;
-    font-weight: 700;
-    background-color: #fff;
-    border-radius: 20px;
-    margin-top: 12px;
-    padding: 10px;
-    border: 0;
-    width: 113px, 140px;
+    display: flex; /* Layout flexível para os elementos internos */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    color:#000; /* Cor do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+    background-color: #fff; /* Cor de fundo */
+    border-radius: 20px; /* Borda arredondada com raio de 20 pixels */
+    margin-top: 12px; /* Margem superior de 12 pixels */
+    padding: 10px; /* Espaçamento interno de 10 pixels */
+    border: 0; /* Sem borda */
+    width: 113px, 140px; /* Largura dos botões */
 }
 
+/* Posicionamento e estilização do "cookies" */
 .cookies{
     margin:25px 20px;
 }
@@ -144,18 +156,60 @@ body {
 }
   
 .cookies a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Sublinha o texto quando o link está sendo hover */
 }
 
 .language .set__language {
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid #878787;
-    color: #FFF;
-    font-weight: bold;
-    cursor: pointer;
-    width: 170px;
+    align-items: center; /* Alinhamento dos itens */
+    background-color: transparent; /* Cor do fundo */
+    border: 1px solid #878787; /* Borda de 1 pixel sólido com cor #878787 */
+    color: #FFF; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte */
+    cursor: pointer; /* Cursor do mouse como ponteiro para indicar interatividade */
+    width: 170px; /* Largura do botão */
     margin: 8px;
     padding: 8px;
     border-radius: 20px;
+}
+
+/* Estilo para a o rodapé */
+.premium {
+    background: linear-gradient(to right, #3da728, #02336e); /* Fundo com um gradiente linear */
+    position: fixed; /* Posicionamento fixo na tela */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 15px 40px; /* Espaçamento interno de 15px cima/baixo e 40px dir/esq */
+    display: flex; /* Layout flexível para os elementos internos */
+    justify-content: space-between; /* Espaçamento uniforme entre os elementos internos */
+    font-family: "DM Sans", sans-serif; /* Fonte para o texto */ 
+}
+
+/* Estilo para o título dentro do rodapé*/
+.premium__title {
+    color: #fff; /* Cor do texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    font-weight: bold; /* Peso da fonte */
+    font-size: 12px; /* Tamanho da fonte */
+    margin-bottom: 10px;
+}
+
+/* Estilo para o subtítulo dentro do rodapé*/
+.premium__subtitle {
+    color: #fff; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+}
+
+/* Estilo para o botão dentro do rodapé */
+.premium__button button {
+    background-color: #fff; /* Cor de fundo para o botão */
+    color: #000; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    padding: 14px 30px; /* Espaçamento interno de 14px no cima/baixo e 30px dir/esq */
+    border: 0; /* Sem borda */
+    border-radius: 40px; /* Borda arredondada com raio de 40 pixels */
+    cursor: pointer; /* Cursor do mouse como ponteiro para indicar interatividade */
+    flex-shrink: 0; /* O botão não deve diminuir de tamanho ao ser flexionado */
 }
