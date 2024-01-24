@@ -1,0 +1,124 @@
+/* Header */
+.main-container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 320px;
+    margin-right: 56px;
+}
+
+.header-navigation, .middle-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: var(--bg-color1);
+}
+
+.header-navigation .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-navigation .navigation .arrow-left {
+    margin-right: 1.25rem;
+}
+
+.arrow-left , .arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    border: none;
+    border-radius: 90%;
+    cursor: pointer;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    width: 744px;
+    height: 48px;
+    margin-left: 8px;
+    background-color: var(--bg-color3);
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+
+.header-search img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-search input{
+    background: transparent;
+    border: none;
+    padding: 0 100px 0 12px;
+    color: var(--word2-color);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.header-login {
+    display: flex;
+    align-items: center;
+}
+
+.header-login .subscribe {
+    color: var(--word1-color);
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.header-login .login {
+    width: 100px;
+    height: 48px;
+    color: var(--word3-color);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+.middle-header {
+    position: sticky;
+    bottom: 0;
+    padding: 16px;
+    margin: 10px;
+    background-color: var(--bg-color1);
+    color: var(--word2-color);
+}
+
+.middle-header .middle-title{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.playlist-sugestions button {
+    border: 0;
+    padding: 10px;
+    background-color: #121212;
+
+}
+.playlist-sugestions img{
+    max-width: 200px;
+    border: 0;
+    border-radius: 5%;
+    border-color: var(--bg-color1);
+    
+}
+.playlist-sugestions {
+    background-color: var(--bg-color1);
+    padding: 20px;
+}
