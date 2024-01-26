@@ -41,7 +41,7 @@
 .header-search {
     display: flex;
     align-items: center;
-    width: 744px;
+    width: 364px;
     height: 48px;
     margin-left: 8px;
     background-color: var(--bg-color3);
@@ -90,35 +90,269 @@
     border-radius: 40px;
 }
 
-.middle-header {
-    position: sticky;
-    bottom: 0;
-    padding: 16px;
-    margin: 10px;
-    background-color: var(--bg-color1);
-    color: var(--word2-color);
+/* PLAYLIST */
+
+/* Define o estilo para o contêiner da playlist */
+.playlist-container {
+    height: 68vh; /* Altura 68% da altura da janela de visualização */
+    padding-top: 16px; /* Espaçamento interno superior de 16 pixels */
+    margin: 10px; /* Margem externa de 10 pixels */
+    border-radius: 10px; /* Borda arredondada com raio de 10 pixels */
+    background-color: #121212; /* Cor de fundo escura */
 }
 
-.middle-header .middle-title{
-    font-size: 24px;
-    font-weight: bold;
-    padding: 16px;
+/* Define estilos para elementos dentro do contêiner da playlist */
+.playlist {
+    margin: 24px; /* Margem externa de 24 pixels */
+}
+  
+/* Define estilos específicos para o elemento com ID "greeting" dentro da playlist */
+.playlist #greeting {
+    color: #fff; /* Cor do texto branca */
+    font-size: 32px; /* Tamanho da fonte de 32 pixels */
+    font-weight: 700; /* Peso da fonte (negrito) */
+    margin-bottom: 48px; /* Margem inferior de 48 pixels */
+}
+  
+/* Define estilos para elementos com a classe "session" dentro da playlist */
+.playlist .session {
+    color: #fff; /* Cor do texto branca */
+    font-size: 24px; /* Tamanho da fonte de 24 pixels */
+    font-weight: 700; /* Peso da fonte (negrito) */
 }
 
-.playlist-sugestions button {
-    border: 0;
-    padding: 10px;
-    background-color: #121212;
+/* SCROLL */
 
+/* Define estilos para o contêiner de rolagem */
+.offer__scroll-container {
+    max-height: 43vh; /* Altura máxima de 43% da altura da janela de visualização */
+    margin: 24px; /* Margem externa de 24 pixels */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
 }
-.playlist-sugestions img{
-    max-width: 200px;
-    border: 0;
-    border-radius: 5%;
-    border-color: var(--bg-color1);
-    
+  
+/* Define estilos para a barra de rolagem no contêiner de rolagem */
+.offer__scroll-container::-webkit-scrollbar {
+    width: 1px; /* Largura da barra de rolagem */
 }
-.playlist-sugestions {
-    background-color: var(--bg-color1);
-    padding: 20px;
+  
+/* Define estilos para o polegar da barra de rolagem no contêiner de rolagem */
+.offer__scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Cor de fundo transparente */
 }
+/* FIM SCROLL */
+
+/* Define estilos para itens listados */
+.offer__list-item {
+    display: grid; /* Layout em grade */
+    justify-items: center; /* Alinha os itens no centro do contêiner da grade */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Cria cinco colunas iguais */
+    grid-gap: 16px; /* Espaçamento entre as células da grade */
+    gap: 16px; /* Espaçamento entre as células da grade (compatibilidade com navegadores mais antigos) */
+    margin-bottom: 16px; /* Margem inferior de 16 pixels */
+}
+  
+/* Define estilos para cartões */
+.cards {
+    position: relative; /* Posição relativa ao elemento pai */
+    width: 220px; /* Largura de 220 pixels */
+    height: 200px; /* Altura de 200 pixels */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa os limites do cartão */
+    border-radius: 8px; /* Borda arredondada com raio de 8 pixels */
+}
+  
+/* Define estilos para o conteúdo de texto dentro dos cartões */
+.cards span {
+    padding: 16px; /* Preenchimento interno de 16 pixels */
+    position: absolute; /* Posição absoluta em relação ao cartão */
+    color: #fff; /* Cor do texto branca */
+    font-size: 24px; /* Tamanho da fonte de 24 pixels */
+    font-weight: 700; /* Peso da fonte (negrito) */
+}
+
+/* COLOR CARDS */
+
+/* Define estilos de fundo para cartões específicos */
+.card1 {
+    background-color: rgb(0, 100, 80); /* Cor de fundo verde escuro */
+}
+.card2 {
+    background-color: rgb(132, 0, 231); /* Cor de fundo roxa */
+}
+.card3 {
+    background: rgb(30, 50, 100); /* Cor de fundo azul escuro */
+}
+.card4 {
+    background: rgb(140, 25, 50); /* Cor de fundo vermelho escuro */
+}
+.card5 {
+    background: rgb(232, 17, 91); /* Cor de fundo rosa */
+}
+.card6 {
+    background: rgb(83, 122, 161); /* Cor de fundo azul acinzentado */
+}
+.card7 {
+    background: rgb(142, 102, 172); /* Cor de fundo roxo acinzentado */
+}
+.card8 {
+    background: rgb(20, 138, 8); /* Cor de fundo verde */
+}
+.card9 {
+    background: rgb(30, 50, 100); /* Cor de fundo azul escuro */
+}
+.card10 {
+    background: rgb(233, 20, 41); /* Cor de fundo vermelho brilhante */
+}
+.card11 {
+    background: rgb(80, 55, 80); /* Cor de fundo roxa escura */
+}
+.card12 {
+    background: rgb(216, 64, 0); /* Cor de fundo laranja escuro */
+}
+.card13 {
+    background: rgb(186, 93, 7); /* Cor de fundo laranja acobreado */
+}
+.card14 {
+    background: rgb(0, 30, 80); /* Cor de fundo azul escuro */
+}
+.card15 {
+    background: rgb(60, 30, 80); /* Cor de fundo roxa escura */
+}
+
+/* Define estilos para imagens dentro dos itens da lista */
+.offer__list-item img {
+    position: absolute; /* Posição absoluta em relação ao elemento pai */
+    right: 0; /* Alinhado à direita */
+    bottom: 0; /* Alinhado à parte inferior */
+    height: auto; /* Altura automática, mantendo a proporção */
+    width: 107px; /* Largura de 107 pixels */
+    transform: rotate(25deg) translate(18%, -2%); /* Rotação e translação da imagem */
+}
+
+
+/* CARD ARTISTA */
+
+/* Define algumas variáveis de CSS personalizadas para o cartão do artista */
+.artist {
+    --column-count: 5; /* Número de colunas no grid */
+    --grid-gap: 24px; /* Espaçamento entre os itens do grid */
+    --min-container-width: 372px; /* Largura mínima do contêiner */
+  }
+  
+  /* Define uma classe para esconder elementos do DOM */
+  .hidden {
+    display: none;
+  }
+  
+  /* Define estilos para o contêiner do grid */
+  .grid-container {
+    grid-gap: 24px; /* Espaçamento entre os itens do grid */
+    display: grid; /* Ativa a exibição em grid */
+    grid-template-columns: repeat(5, minmax(0, 1fr)); /* Define 5 colunas igualmente espaçadas e ajustáveis */
+    min-width: 767px; /* Largura mínima do contêiner do grid */
+  }
+  
+  /* Define estilos para o cartão do artista */
+  .artist-card {
+    background: #181818; /* Cor de fundo do cartão */
+    border-radius: 8px; /* Raio de borda para arredondar as bordas */
+    -ms-flex: 1; /* Flexbox para compatibilidade com o Internet Explorer */
+    flex: 1; /* Flexbox */
+    isolation: isolate; /* Isola o elemento para criar um novo contexto de empilhamento */
+    padding: 16px; /* Preenchimento interno */
+    position: relative; /* Posição relativa para posicionamento de elementos filhos */
+    transition: background-color 0.3s ease; /* Transição de cor de fundo com efeito suave */
+    width: 100%; /* Largura total do elemento */
+  }
+  
+  /* Efeito de hover para o cartão do artista */
+  .artist-card:hover {
+    background-color: #252525; /* Altera a cor de fundo ao passar o mouse */
+  }
+  
+  /* Define estilos para a imagem dentro do cartão */
+  .card-img {
+    padding-bottom: 100%; /* Proporção para manter a altura igual à largura */
+    position: relative; /* Posição relativa para posicionamento absoluto da imagem */
+    width: 100%; /* Largura total */
+    margin-bottom: 16px; /* Margem inferior */
+  }
+  
+  /* Estilos para a imagem do artista dentro do cartão */
+  .artist-img {
+    height: 100%; /* Altura total */
+    left: 0; /* Posiciona à esquerda */
+    position: absolute; /* Posição absoluta para sobrepor outros elementos */
+    top: 0; /* Posiciona no topo */
+    width: 100%; /* Largura total */
+    border-radius: 50%; /* Borda arredondada para criar uma imagem circular */
+  }
+  
+  /* Define estilos para o texto dentro do cartão */
+  .card-text {
+    display: flex; /* Ativa a exibição flexível para alinhamento */
+    flex-direction: column; /* Coluna para empilhar os elementos verticalmente */
+    color: #fff; /* Cor do texto */
+    overflow: hidden; /* Oculta qualquer conteúdo excedente */
+    text-overflow: ellipsis; /* Adiciona reticências para texto que ultrapassa o contêiner */
+    white-space: nowrap; /* Impede a quebra de linha */
+    min-height: 62px; /* Altura mínima do contêiner de texto */
+  }
+  
+  /* Estilos para os links dentro do texto do cartão */
+  .card-text a {
+    display: inline-block; /* Exibição em bloco para links */
+    max-width: 100%; /* Largura máxima de 100% */
+    vertical-align: middle; /* Alinhamento vertical ao meio */
+  }
+  
+  /* Estilos para o nome do artista */
+  .artist-name {
+    box-sizing: border-box; /* Inclui a largura da borda e do preenchimento no modelo de caixa */
+    margin-block: 0px; /* Margem do bloco definida como 0 */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte (negrito) */
+    padding-block-end: 8px; /* Preenchimento na extremidade inferior */
+  }
+  
+  /* Estilos para a categoria do artista */
+  .artist-categorie {
+    color: #6a6a6a; /* Cor do texto */
+    font-weight: 400; /* Peso da fonte (normal) */
+    font-size: 0.875rem; /* Tamanho da fonte menor */
+  }
+  
+  /* Estilos para o ícone de reprodução dentro do cartão */
+  .play {
+    position: relative; /* Posição relativa para posicionamento absoluto do ícone */
+  }
+  
+  /* Estilos para o ícone de reprodução */
+  .play .fa-play {
+    position: absolute; /* Posição absoluta para sobrepor outros elementos */
+    right: 10px; /* Posiciona à direita */
+    top: 120px; /* Posiciona no topo a 120 pixels da parte superior */
+    padding: 18px; /* Preenchimento interno */
+    background-color: #1db954; /* Cor de fundo do botão de reprodução */
+    border-radius: 100%; /* Borda arredondada para criar um botão circular */
+    font-size: 14px; /* Tamanho da fonte */
+    opacity: 0; /* Opacidade inicial 0 (invisível) */
+    transition: all ease 0.4s; /* Transição suave de todas as propriedades com duração de 0.4s */
+  }
+  
+  /* Efeito de hover para o ícone de reprodução */
+  .artist-card:hover .play .fa-play {
+    opacity: 1; /* Torna o ícone visível ao passar o mouse */
+    transform: translateY(-20px); /* Move o ícone para cima ao passar o mouse */
+  }
+  
+  /* Efeito de hover para o ícone de reprodução ao passar o mouse sobre ele diretamente */
+  .play .fa-play:hover {
+    padding: 20px; /* Aumenta o preenchimento ao passar o mouse */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  }
+  
+  /* Estilos para o contêiner de resultado do artista */
+  #result-artist {
+    padding: 20px 40px; /* Preenchimento interno do contêiner de resultado do artista */
+  }
+  /* FIM CARD ARTISTA */
